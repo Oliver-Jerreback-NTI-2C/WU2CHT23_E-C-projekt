@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-#gridwrapper {
+#gridwrapper_1 {
 display: grid;
 height: 100vh;
 grid-template-rows: 100px 0.5fr 4fr 100px;
@@ -16,9 +16,29 @@ grid-template-areas:
 "foo foo foo";
 }
 
-#header_1 {
-    grid-area: hea;
+#gridwrapper_2 {
+    display: grid; 
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 100px;
+    gap: 20px 20px;
+    grid-template-areas:
+    "hea hea hea"
+    "se5 se6 se7"
+    "se8 se9 se10"
+    "foo foo foo";
 }
+
+#gridwrapper_3 {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 100px 4fr 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "hea hea hea"
+    "se11 se12 se13"
+    "foo foo foo";
+    }
 
 #section_1 {
     background-color: #87c0ea;
@@ -42,14 +62,85 @@ grid-template-areas:
     background-color: #87c0ea;
     grid-area: se4;
 }
-#foot {
+
+#section_5 {
+    background-color: antiquewhite;
+    grid-area: se5;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+
+#section_6 {
+    background-color: aqua;
+    grid-area: se6;
+    border-radius: 20px;
+}
+
+#section_7 {
+    background-color: rgb(36, 84, 84);  
+    grid-area: se7;
+    border-radius: 20px;
+    margin-right: 15px;
+
+}
+
+#section_8 {
+    background-color: rgb(8, 0, 255);   
+    grid-area: se8;
+    border-radius: 20px;
+    margin-left: 15px;
+
+}
+
+#section_9 {
+    background-color: rgb(85, 255, 0);  
+    grid-area: se9;
+    border-radius: 20px
+}
+
+#section_10 {
+    background-color: rgb(255, 0, 0);  
+    grid-area: se10;
+    border-radius: 20px;    
+    margin-right: 15px;
+
+}
+
+#section_11 {
+    background-color: rgb(255, 0, 0);  
+    grid-area: se11;
+    border-radius: 20px;    
+    margin: 15px;
+    margin-right: 0px;
+}
+
+#section_12 {
+    background-color: rgb(208, 0, 255);  
+    grid-area: se12;
+    border-radius: 20px;   
+    margin: 15px;
+}
+
+#section_13 {
+    background-color: rgb(0, 255, 8);  
+    grid-area: se13;
+    border-radius: 15px;    
+    margin: 15px;
+    margin-left: 0px;
+}
+
+footer {
     background-color: #3498db;
     grid-area: foo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header {
     background-color: #3498db;
     display: flex;
+    grid-area: hea;
 }
 
 h1 {
@@ -83,4 +174,3 @@ a:hover {
     font-size: 60px;
     font-weight: bold;
 }
-
