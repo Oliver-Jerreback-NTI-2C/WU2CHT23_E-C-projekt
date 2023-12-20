@@ -5,15 +5,15 @@
 }
 
 #gridwrapper_1 {
-display: grid;
-height: 100vh;
-grid-template-rows: 100px 0.5fr 4fr 100px;
-grid-template-columns: 1fr 2fr 1fr;
-grid-template-areas:
-"hea hea hea"
-"se1 se1 se1"
-"se3 se2 se4"
-"foo foo foo";
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 100px 0.5fr 4fr 100px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+    "hea hea hea"
+    "se1 se1 se1" 
+    "se3 se2 se4"
+    "foo foo foo";
 }
 
 #gridwrapper_2 {
